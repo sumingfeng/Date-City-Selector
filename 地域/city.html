@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title></title>
+
+	<link rel="stylesheet" href="../css/city.css">
+
+</head>
+
+<body style="padding:10px">
+	<p>多选</p><br>
+	<div class="city-sec sec-multi" id="s1">
+		<div class="select-lis">
+			<p class="sec-val">请选择地区</p>
+			<s class="arrow"></s>
+		</div>
+	</div>
+	
+	<br><br>
+	
+	<p>单选</p><br>
+	
+	<div class="city-sec sec-single" id="s2">
+		<div class="select-lis">
+			<p class="sec-val">请选择地区</p>
+			<s class="arrow"></s>
+		</div>
+	</div>
+	
+	
+	
+	<!-- 城市多选选择器隐藏 -->
+	<div class="city-popBox multiSelect" style="display:none">
+		<div class="city-dialog">
+			<span class="close">X</span>
+			<div class="dia-inner">
+				<div class="row">
+					<span class="nation">全国</span>
+				</div>
+				<div class="row tabs">
+					<ul class="clearfix">
+						<li class="cur">
+							<a href="javascript:void(0)">选择省</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="row tab-con">
+					<div class="item-con">
+						<div class="province-lis">
+							<div class="inner">
+								<ul class="clearfix J-proLis"></ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<p class="oprea clearfix">
+				<a href="javascript:;" class="confirm-button">确定</a>
+			</p>
+		</div>
+	</div>
+	<!-- End -->
+
+
+	<!-- 城市单选选择器隐藏 -->
+	<div class="city-popBox singleSelect" style="display:none">
+		<div class="city-dialog">
+			<span class="close">X</span>
+			<div class="dia-inner">
+				<div class="row">
+					<span class="nation">全国</span>
+				</div>
+				<div class="row tabs hasTab">
+					<ul class="clearfix">
+						<li class="cur">
+							<a href="javascript:void(0)">选择省</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">选择地市</a>
+						</li>
+					</ul>
+				</div>
+				<div class="row tab-con hasTabCon">
+					<div class="item-con">
+						<div class="province-lis">
+							<div class="inner">
+								<ul class="clearfix J-proLis"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="item-con" style="display:none">
+
+						<p style="margin-bottom:10px">请先选择省份</p>
+
+
+						<div class="province-lis2">
+							<div class="inner">
+								<ul class="clearfix J-proLis"></ul>
+							</div>
+						</div>
+
+						<div class="city-lis">
+							<div class="inner">
+								<ul class="clearfix ct-lis">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- End -->
+
+	<script src="../js/jq.js"></script>
+	<script src="../js/configCity.js"></script>
+	<script src="../js/city.js"></script>
+</body>
+<script>
+	
+	//设置默认值
+	/*CityControl(obj,text)*/
+	
+	CityControl($("#s1"),"上海,重庆,北京");
+	
+	CityControl($("#s2"),"上海")
+	
+</script>
+</html>

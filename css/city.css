@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*=================================
+*         sun-rise licence
+*
+* 	by: suming
+*    
+*   program : sumingfeng@yeah.net
+* ==================================*/
+html { background: #FFFFFF; }
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input, select, textarea, figure { margin: 0; }
+
+ul, ol, menu { list-style: none; margin: 0; padding: 0; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+fieldset, a img, iframe { border: 0 none; }
+
+address, em, i { font-style: normal; }
+
+abbr, acronym { font-variant: normal; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #CCCCCC; margin: 1em 0; padding: 0; }
+
+input, select, button { vertical-align: middle; }
+
+input, textarea, select { *font-size: 100%; }
+
+button { overflow: visible; }
+
+button::-moz-focus-inner, input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=file] > input[type=button]::-moz-focus-inner { border: 0 none; padding: 0; }
+
+:active { outline: 0 none; }
+
+::selection { background: #E74700; color: #FFFFFF; }
+
+body { font-size: 12px; font-family: "Microsoft YaHei", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", Tahoma, Arial, STHeiti, sans-serif; _font-family: Tahoma, Arial, Helvetica, STHeiti, sans-serif; color: #333333; }
+
+.clearfix { display: block; *zoom: 1; }
+.clearfix:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.no-line { text-decoration: none; }
+.no-line:hover { text-decoration: none; }
+
+.fl { float: left; _display: inline; }
+
+.fr { float: right; _display: inline; }
+
+.t-l { text-align: left; }
+
+.t-r { text-align: right; }
+
+.t-c { text-align: center; }
+
+.city-sec{position:relative;width:220px;height:30px;border:1px solid #d3e6f2;overflow: hidden;cursor: pointer}
+.city-sec .select-lis{}
+.city-dialog .row{padding:10px 0 0 10px}
+.city-sec s{background:url(../images/icon_form.png) -11px 0 no-repeat;width:12px;height: 30px; overflow: hidden;position: absolute;right:10px;top:0px; cursor: pointer}
+
+.city-dialog{background: #5c9ccc; border-radius: 5px;border-radius: 5px;width:519px;height: auto; position: relative;  padding: 35px 10px 0 10px;}
+
+.city-dialog .close{color:#fff;position:absolute;right:10px;top:10px;font-family:"微软雅黑";cursor: pointer}
+.dia-inner{ background: #fff;border-radius: 5px;border-radius: 5px;padding-bottom:5px}
+
+.confirm-button{width:55px; height:29px; line-height: 29px; background: #fff;border-radius: 5px;border-radius: 5px; color: #325f7a;display: block; text-align: center;font-weight: 700; float:right;margin:10px 0}
+.confirm-button:hover{ text-decoration: none}
+
+.city-dialog .tabs li{width:60px;height: 25px; line-height: 25px; float: left;background: #fff; text-align: center;border-radius: 5px;border-radius: 5px;margin-right:15px}
+.city-dialog .tabs li.cur{background: #5c9ccc;}
+.city-dialog .tabs a{color:#5c9ccc}
+.city-dialog .tabs li.cur a{color:#fff; font-weight: 700}
+.city-dialog .tabs a:hover{text-decoration: none;}
+
+.J-proLis li { float: left;display:inline;margin:0 5px 5px 0;}
+.J-proLis li a,.nation{display: block;width:58px; height: 35px;color:#325f7a; font-weight: 700; background: #ebf4ff;text-align: center;line-height: 35px}
+.J-proLis li.cur a,.nat{background: #7fb0d9;color:#fff;}
+.city-sec .select-lis {padding:8px;}
+.city-sec .sec-val{width:150px;overflow:hidden;white-space: nowrap;-o-text-overflow: ellipsis; text-overflow: ellipsis;}
+.nation{cursor: pointer}
+.city-lis{width:500px; overflow: hidden}
+.city-lis .bg{background: #eff5ff;padding:5px;}
+.ct-lis li{ float: left;display: inline}
+.ct-lis a{display: block;width:52px; height: 27px;color:#325f7a; font-weight: 700;text-align: center;line-height: 27px; overflow: hidden;}
+.ct-lis li.cur a{background: #5c9ccc; color: #fff}
+
+.city-popBox{position:absolute}
+
+.@charset "utf-8";
+/*=================================
+*         sun-rise licence
+*
+* 	by: suming
+*    
+*   program : sumingfeng@yeah.net
+* ==================================*/
+html { background: #FFFFFF; }
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input, select, textarea, figure { margin: 0; }
+
+ul, ol, menu { list-style: none; margin: 0; padding: 0; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+fieldset, a img, iframe { border: 0 none; }
+
+address, em, i { font-style: normal; }
+
+abbr, acronym { font-variant: normal; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #CCCCCC; margin: 1em 0; padding: 0; }
+
+input, select, button { vertical-align: middle; }
+
+input, textarea, select { *font-size: 100%; }
+
+button { overflow: visible; }
+
+button::-moz-focus-inner, input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=file] > input[type=button]::-moz-focus-inner { border: 0 none; padding: 0; }
+
+:active { outline: 0 none; }
+
+::selection { background: #E74700; color: #FFFFFF; }
+
+body { font-size: 12px; font-family: "Microsoft YaHei", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", Tahoma, Arial, STHeiti, sans-serif; _font-family: Tahoma, Arial, Helvetica, STHeiti, sans-serif; color: #333333; }
+
+.clearfix { display: block; *zoom: 1; }
+.clearfix:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.no-line { text-decoration: none; }
+.no-line:hover { text-decoration: none; }
+
+.fl { float: left; _display: inline; }
+
+.fr { float: right; _display: inline; }
+
+.t-l { text-align: left; }
+
+.t-r { text-align: right; }
+
+.t-c { text-align: center; }
+
+.city-sec{position:relative;width:220px;height:30px;border:1px solid #d3e6f2;overflow: hidden;cursor: pointer}
+.city-sec .select-lis{}
+.city-dialog .row{padding:10px 0 0 10px}
+.city-sec s{background:url(../images/icon_form.png) -11px 0 no-repeat;width:12px;height: 30px; overflow: hidden;position: absolute;right:10px;top:0px; cursor: pointer}
+
+.city-dialog{background: #5c9ccc; border-radius: 5px;border-radius: 5px;width:519px;height: auto; position: relative;  padding: 35px 10px 0 10px;}
+
+.city-dialog .close{color:#fff;position:absolute;right:10px;top:10px;font-family:"微软雅黑";cursor: pointer}
+.dia-inner{ background: #fff;border-radius: 5px;border-radius: 5px;padding-bottom:5px}
+
+.confirm-button{width:55px; height:29px; line-height: 29px; background: #fff;border-radius: 5px;border-radius: 5px; color: #325f7a;display: block; text-align: center;font-weight: 700; float:right;margin:10px 0}
+.confirm-button:hover{ text-decoration: none}
+
+.city-dialog .tabs li{width:60px;height: 25px; line-height: 25px; float: left;background: #fff; text-align: center;border-radius: 5px;border-radius: 5px;margin-right:15px}
+.city-dialog .tabs li.cur{background: #5c9ccc;}
+.city-dialog .tabs a{color:#5c9ccc}
+.city-dialog .tabs li.cur a{color:#fff; font-weight: 700}
+.city-dialog .tabs a:hover{text-decoration: none;}
+
+.J-proLis li { float: left;display:inline;margin:0 5px 5px 0;}
+.J-proLis li a,.nation{display: block;width:58px; height: 35px;color:#325f7a; font-weight: 700; background: #ebf4ff;text-align: center;line-height: 35px}
+.J-proLis li.cur a,.nat{background: #7fb0d9;color:#fff;}
+.city-sec .select-lis {padding:8px;}
+.city-sec .sec-val{width:150px;overflow:hidden;white-space: nowrap;-o-text-overflow: ellipsis; text-overflow: ellipsis;}
+.nation{cursor: pointer}
+.city-lis{width:500px; overflow: hidden}
+.city-lis .bg{background: #eff5ff;padding:5px;}
+.ct-lis li{ float: left;display: inline}
+.ct-lis a{display: block;width:52px; height: 27px;color:#325f7a; font-weight: 700;text-align: center;line-height: 27px; overflow: hidden;}
+.ct-lis li.cur a{background: #5c9ccc; color: #fff}
+
+.city-popBox{position:absolute}
+
+.multiSelect .special-single{display:none}
+
+.singleSelect .city-dialog{padding-bottom:10px}
